@@ -9,6 +9,8 @@ app.post('/payments', (req, res) => {
   console.log('req.body: ', req?.body);
 
   res.sendStatus(201);
-})
+});
+
+app.get('/', (req, res) => res.status(200).send('Hello'))
 
 app.listen(8081);
